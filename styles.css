@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.timeline {
+    max-width: 600px; /* Adjust the width as needed */
+    margin: 50px auto;
+}
+
+.timeline-item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+.timeline-item {
+    opacity: 0; /* Initially set to be invisible */
+    transition: opacity 0.8s ease-in-out; /* Transition for fade effect */
+}
+
+.timeline-item.active {
+    opacity: 1; /* Fade in when the active class is applied */
+}
