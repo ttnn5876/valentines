@@ -21,31 +21,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener('scroll', handleScroll);
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-    const pages = document.querySelectorAll('.page');
-    let currentPageIndex = 0;
-
-    function scrollToPage(pageIndex) {
-        const targetPage = pages[pageIndex];
-        window.scrollTo({
-            top: targetPage.offsetTop,
-            behavior: 'smooth',
-        });
-        currentPageIndex = pageIndex;
-    }
-
-    const hammer = new Hammer(window);
-
-    hammer.on('swipedown', function () {
-        if (currentPageIndex > 0) {
-            scrollToPage(currentPageIndex - 1);
-        }
-    });
-
-    hammer.on('swipeup', function () {
-        if (currentPageIndex < pages.length - 1) {
-            scrollToPage(currentPageIndex + 1);
-        }
-    });
-});
