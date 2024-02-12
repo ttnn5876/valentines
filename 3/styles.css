@@ -26,11 +26,11 @@ img {
     color: #fff;
     font-family: "Rubik", sans-serif;
     /* font-size: xx-large; */
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 20px;
     position: absolute;
-    top: 80%;
-    left: 50%;
+    top: 20%;
+    left: 80%;
     transform: translate(-50%, -50%);
     text-align: center;
     /* line-height: 100px; */
@@ -42,9 +42,9 @@ img {
 }
 
 :root {  
-  --purple: rgb(123, 31, 162);
-  --violet: rgb(103, 58, 183);
-  --pink: rgb(244, 143, 177);
+  --purple: rgb(231, 83, 9);
+  --violet: rgb(255, 255, 255);
+  --pink: rgb(231, 83, 9);
 }
 
 @keyframes background-pan {
@@ -103,7 +103,7 @@ h1 > .magic {
 
 
 h1 > .magic > .magic-text {
-  animation: background-pan 3s linear infinite;
+  animation: background-pan 1s linear infinite;
   background: linear-gradient(
     to right,
     var(--purple),
